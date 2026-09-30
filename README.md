@@ -1,23 +1,24 @@
 # GitHub 星标项目手册
 
-**先看表，再翻详解**：开头四张表一眼扫过 65 个项目是干嘛的；想深入了解某个项目，再往下翻对应条目的详细说明。
+**先看表，再翻详解**：开头四张表一眼扫过 68 个项目是干嘛的；想深入了解某个项目，再往下翻对应条目的详细说明。
 
-**后续维护按此模板**：每个新项目在对应分类的一览表填写仓库链接、查询时星数和一句话定位；在详解末尾记录核验日期、当时的仓库所属账号及类型、仓库 ID、创建日期和许可标识，再依据项目官方 README 写清用途、主要功能、适用范围与已知限制，并保留来源链接。所属账号不当作最初作者，未核实内容明确标注；链接失效时保留最近一次说明并注明检查结果。个人使用感受仅在实际体验后记录；公开手册只收录第三方收藏项目。
+**后续维护按此模板**：每个新增项目在对应分类一览表填写仓库链接、星数和一句话定位；详解分别记录星数快照日期、身份核验日期与功能核验日期。依据官方 README 写清用途、主要功能、必要配套和限制，并附含完整提交 SHA 的固定来源链接；README 不足时补官方文档或源码。所属账号不当作最初作者，未核实内容明确标注；链接失效时保留最近说明与有日期的检查结果。个人使用感受仅在实际体验后记录；公开手册只收录第三方项目信息。
 
-- 星数为 2026-09-22 查询值（一览表与详解同源）
-- 本次公开 stars 快照读取于 2026-09-22 14:07（UTC+8）；星数会动态变化
-- 仓库身份信息核验于 2026-09-24：所属账号、仓库 ID、创建日期和许可标识来自当时可访问的 GitHub 仓库资料；所属账号不一定是项目最初创建者，许可标识也不替代许可文件
-- 本轮还据项目官方 README 补充了 8 个原先较短的详解；其余功能说明沿用 2026-09-22 清单，未逐项重新核实
+- **星数快照**：原 65 项保留 2026-09-22 查询值（当日 14:07，UTC+8）；本次新增 3 项为 2026-09-30 GitHub 仓库 API 查询值，详解另记日期。一览表与详解同源，星数会动态变化。
+- **公开 Stars 核对（2026-09-30）**：公开页面三页共 67 个唯一项目，本次补入 Octop、WeKnora、LunaTranslator；原 Sliverkiss/workbuddy2api 未出现在当前公开列表且原址返回 404，保留历史条目，因此手册共 68 项。本轮未调整 Stars 或其列表。
+- **身份快照**：原 65 项保留 2026-09-24 核验结果及缺证据说明；各项记录所属账号、仓库 ID、创建日期和许可标识，无法取得的内容仍标明未核实。新增 3 项核验于 2026-09-30。所属账号不一定是最初创建者，GitHub 许可标识不替代许可文件。
+- **功能核验（2026-09-30）**：本轮核对 OpenCode、SillyTavern、LX Music 桌面版、NeriPlayer、Foundation Sunshine、Moonlight V+、LitePan、WorkBuddy2API Panel 及新增 3 项，各条目附固定官方来源。其余 57 项本轮未重新核验，沿用原说明（包括 2026-09-22 清单及先前 README 补充）；旧状态保留原日期或注明核验日期未单独记录。
+- **验证范围**：功能说明是官方文档或源码证据，未进行安装、部署、账号、模型或设备功能实测；一致性检查验证手册内部结构，不证明上游当前可用性。
 
-## 🤖 AI（27 个）
+## 🤖 AI（29 个）
 
 | 项目 | 星数 | 一句话简介 |
 |---|---|---|
 | [obra/superpowers](https://github.com/obra/superpowers) | 289,823 | 给编程 AI 的软件开发方法论技能包 |
 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 264,870 | AI agent 工作流的性能优化与治理系统 |
 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 247,845 | 会自我改进、常驻云端的 AI 智能体 |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 209,214 | 开源的终端 AI 编程智能体 |
-| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 232,616 | DeepSeek 官方「一切皆插件」的 agent 框架 |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 209,214 | 开源 AI 编程智能体，支持 Build/Plan 工作模式及终端、桌面 Beta 界面 |
+| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 232,616 | DeepSeek 官方插件化 agent 框架；原说明记载开发者预览及破坏性变更风险，功能核验日期未单独记录 |
 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 98,210 | 面向 AI 编程 agent 的生产级工程技能库 |
 | [odysseus-dev/odysseus](https://github.com/odysseus-dev/odysseus) | 87,476 | 自托管的个人 AI 工作空间全家桶 |
 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 88,765 | 编码 agent 的自托管开发者控制中心 |
@@ -26,7 +27,7 @@
 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 52,060 | 跨平台多模型 AI 桌面客户端 |
 | [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) | 49,832 | 开源中文书《深入理解 AI Agent》全书仓库 |
 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35,668 | 终端里的 DeepSeek 原生编程 agent |
-| [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) | 33,658 | LLM 角色扮演 / 小说共创前端 |
+| [SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern) | 33,658 | 本地 LLM 交互前端，支持角色卡、群聊与聊天 RAG，需连接推理后端 |
 | [ai-shifu/ChatALL](https://github.com/ai-shifu/ChatALL) | 16,501 | 并发向多个 AI 机器人发问，同屏对比 |
 | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 115,822 | 让 AI agent 通过浏览器访问和自动化操作网站 |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | 267,321 | 面向真实工程的 AI 编程技能集合 |
@@ -40,41 +41,44 @@
 | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | 161 | 将 WorkBuddy 与 WorkBuddy AI 模型接入 DSH，支持双供应商、只读积分与模型管理。 |
 | [anywhere-labs/Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,120 | 跨设备的开源 Agent 工作台：连接工作设备，在桌面、手机和 Web 管理会话、文件与终端。 |
 | [blader/humanizer](https://github.com/blader/humanizer) | 51,158 | 适用于支持 skills 的 agent 的 Markdown 技能：改写 AI 腔文本而不改变原意，并保留事实细节。 |
+| [TencentCloud/Octop](https://github.com/TencentCloud/Octop) | 5,839 | 支持多用户、多 Agent 的自托管 AI 助手，集成 Web、CLI、IM 与知识库 |
+| [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | 31,271 | 基于 LLM 的知识管理框架，组合文档 RAG、任务 Agent 和自动整理 Wiki |
 
 ## 📖 阅读与影音（17 个）
 
 | 项目 | 星数 | 一句话简介 |
 |---|---|---|
-| [lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) | 53,823 | 开源桌面音乐软件，支持自定义音源 |
-| [gedoor/legado](https://github.com/gedoor/legado) | 47,083 | 阅读 3.0 安卓阅读器 ⚠️ 作者已发侵权公告 |
+| [lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) | 53,823 | 依赖自定义源的桌面音乐软件；官方后续开发重心转向 Any Listen |
+| [gedoor/legado](https://github.com/gedoor/legado) | 47,083 | 阅读 3.0 安卓阅读器；⚠️ 2026-09-24 检查时官方 README 为侵权公告，本轮未复核 |
 | [Predidit/Kazumi](https://github.com/Predidit/Kazumi) | 30,148 | 自定义规则的番剧采集观看 App |
 | [koodo-reader/koodo-reader](https://github.com/koodo-reader/koodo-reader) | 28,257 | 全平台电子书管理与阅读器 |
 | [AZeC4/TelegramGroup](https://github.com/AZeC4/TelegramGroup) | 23,280 | Telegram 群组 / 频道 / 机器人导航合集 |
-| [XIU2/Yuedu](https://github.com/XIU2/Yuedu) | 12,320 | 「阅读」App 自用书源分享 |
-| [listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension) | 12,100 | 聚合七家音乐平台的浏览器扩展 |
+| [XIU2/Yuedu](https://github.com/XIU2/Yuedu) | 12,320 | 「阅读」App 自用书源；原说明记载维护不积极，功能核验日期未单独记录 |
+| [listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension) | 12,100 | 聚合音乐平台的浏览器扩展；⚠️ 2026-09-03 记录为更新停滞，本轮未复核维护状态 |
 | [listen1/listen1_desktop](https://github.com/listen1/listen1_desktop) | 11,405 | Listen 1 音乐聚合的桌面版 |
 | [pdone/lx-music-source](https://github.com/pdone/lx-music-source) | 9,036 | 洛雪音乐第三方音源导入链接集合 |
 | [aoaostar/legado](https://github.com/aoaostar/legado) | 6,440 | 「阅读」App 书源与配套资源集合站 |
 | [Macrohard0001/lx-ikun-music-sources](https://github.com/Macrohard0001/lx-ikun-music-sources) | 2,473 | LX Music 与 IKUN Music 音源收集 |
 | [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources) | 747 | 每日自动更新的电视直播源 |
 | [lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile) | 18,377 | 基于 React Native 的移动端音乐软件 |
-| [cwuom/NeriPlayer](https://github.com/cwuom/NeriPlayer) | 3,498 | 多源在线播放+本地管理的原生安卓音乐播放器 |
+| [cwuom/NeriPlayer](https://github.com/cwuom/NeriPlayer) | 3,498 | Android 9+ 音频播放器，整合在线与本地管理、自有元数据同步及一起听 |
 | [Moriafly/SaltPlayerSource](https://github.com/Moriafly/SaltPlayerSource) | 7,377 | 椒盐音乐播放器官方仓库（安卓包发布与反馈） |
 | [chthollyphile/folia-major](https://github.com/chthollyphile/folia-major) | 2,893 | 以全屏沉浸式歌词为核心的多平台音乐播放器，支持在线/本地音乐、歌词匹配与动画主题。 |
-| [ZWolken/Light-Novel-Yuedu-Source](https://github.com/ZWolken/Light-Novel-Yuedu-Source) | 441 | 轻小说阅读书源合集，含日轻、国轻、日语原版及合集；README 明示项目处在半维护周期。 |
+| [ZWolken/Light-Novel-Yuedu-Source](https://github.com/ZWolken/Light-Novel-Yuedu-Source) | 441 | 轻小说阅读书源合集；原 README 记录半维护、不保证有效，功能核验日期未单独记录 |
 
-## 🎮 游戏与串流（8 个）
+## 🎮 游戏与串流（9 个）
 
 | 项目 | 星数 | 一句话简介 |
 |---|---|---|
 | [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) | 150,160 | 安卓投屏与电脑键鼠控制 |
-| [AlkaidLab/foundation-sunshine](https://github.com/AlkaidLab/foundation-sunshine) | 6,938 | 游戏串流主机端（Sunshine 增强版） |
-| [qiin2333/moonlight-vplus](https://github.com/qiin2333/moonlight-vplus) | 3,769 | Moonlight 安卓串流客户端增强版 |
+| [AlkaidLab/foundation-sunshine](https://github.com/AlkaidLab/foundation-sunshine) | 6,938 | 面向 Windows 的 Sunshine 游戏串流主机增强版，配合 Moonlight 客户端使用。 |
+| [qiin2333/moonlight-vplus](https://github.com/qiin2333/moonlight-vplus) | 3,769 | Moonlight 安卓串流客户端增强版，含输入定制、HDR 校准与主机联动功能。 |
 | [DSPBluePrints/FactoryBluePrints](https://github.com/DSPBluePrints/FactoryBluePrints) | 2,440 | 戴森球计划社区工厂蓝图仓库 |
 | [mcthesw/game-save-manager](https://github.com/mcthesw/game-save-manager) | 1,142 | 图形化开源游戏存档管理器 |
 | [alkaidjin/Maa-Assistant-Browndust2](https://github.com/alkaidjin/Maa-Assistant-Browndust2) | 67 | BrownDust2 手游日常自动化助手 |
 | [GodRaymond233/ok-bd2](https://github.com/GodRaymond233/ok-bd2) | 103 | 基于 ok-script 的 BrownDust2 自动化助手 |
 | [MadestSamurai/bd2-infinite-gacha](https://github.com/MadestSamurai/bd2-infinite-gacha) | 10 | BrownDust II Windows 无限抽抽乐助手：按 A/B 目标与停止条件刷新，命中后保留结果确认。 |
+| [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator) | 13,471 | 视觉小说翻译工具，支持 HOOK、OCR、在线／离线翻译及语言学习辅助 |
 
 ## 🛠️ 自托管与效率工具（13 个）
 
@@ -83,14 +87,14 @@
 | [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev) | 146,258 | Clash Meta 图形代理客户端 |
 | [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) | 46,455 | 思源笔记，可自托管的开源知识库 |
 | [waydabber/BetterDisplay](https://github.com/waydabber/BetterDisplay) | 33,746 | Mac 显示器深度管理工具 |
-| [jiangrui1994/CloudSaver](https://github.com/jiangrui1994/CloudSaver) | 9,317 | 网盘资源搜索与一键转存（自部署） |
+| [jiangrui1994/CloudSaver](https://github.com/jiangrui1994/CloudSaver) | 9,317 | 网盘资源搜索与转存工具；原说明记载源码停留 V0.2.5、新版仅提供镜像，功能核验日期未单独记录 |
 | [Nevcairiel/LAVFilters](https://github.com/Nevcairiel/LAVFilters) | 9,154 | Windows 视频解码滤镜套装 |
 | [floccusaddon/floccus](https://github.com/floccusaddon/floccus) | 8,477 | 跨浏览器跨设备私密书签同步 |
-| [Ponphil/LitePan](https://github.com/Ponphil/LitePan) | 1,260 | 多网盘聚合挂载与媒体库整理 |
+| [Ponphil/LitePan](https://github.com/Ponphil/LitePan) | 1,260 | Go 版多网盘聚合挂载与媒体库整理工具，当前处于开发阶段。 |
 | [MAXeaglet/commandcode-proxy](https://github.com/MAXeaglet/commandcode-proxy) | 668 | 将 Command Code API 转换为 OpenAI/Anthropic 兼容端点的单文件零依赖反代。 |
 | [Patrick-mufeng/cmdgo-bridge](https://github.com/Patrick-mufeng/cmdgo-bridge) | 14 | 把 Command Code Go 套餐包装为 OpenAI 兼容本地桥，含 OAuth、多账号池与 Web 控制台。 |
-| [linguo2625469/workbuddy2api-panel](https://github.com/linguo2625469/workbuddy2api-panel) | 660 | 腾讯 CodeBuddy 的 OpenAI 兼容多账号网关增强分支，附 Web 管理面板与任务自动化。 |
-| [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api) | 1,428 | 将 CodeBuddy 账号包装为 OpenAI 兼容网关，支持 OAuth、多账号轮转、熔断与流式响应。 |
+| [linguo2625469/workbuddy2api-panel](https://github.com/linguo2625469/workbuddy2api-panel) | 660 | CodeBuddy 账号的非官方 Chat Completions 兼容网关，附账号池和 Web 管理面板。 |
+| [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api) | 1,428 | CodeBuddy 的非官方 OpenAI 兼容网关；⚠️ 2026-09-24 与 2026-09-30 原址返回 404，保留历史说明 |
 | [MetaCubeX/ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid) | 46,527 | Clash.Meta 的 Android 图形界面，支持 Android 5.0+ 及多架构构建。 |
 | [Javis603/token-monitor](https://github.com/Javis603/token-monitor) | 2,275 | 本地优先的桌面小组件：追踪多款 AI 编程工具的 token 用量、花费与限额，并支持多设备同步。 |
 
@@ -98,7 +102,7 @@
 
 # 项目详解
 
-## 🤖 AI · 详解（27 个）
+## 🤖 AI · 详解（29 个）
 
 ### 1. [obra/superpowers](https://github.com/obra/superpowers)
 
@@ -130,7 +134,9 @@
 
 > **身份快照（2026-09-24）**：仓库所属账号 [anomalyco](https://github.com/anomalyco)（组织账号）；GitHub 仓库 ID `975734319`；仓库创建于 2025-04-30；GitHub 许可标识：`MIT`。
 
-开源的终端 AI 编程智能体（the open source coding agent），在命令行里用 AI 写代码。安装渠道覆盖最全（npm、brew、scoop 等几乎全部包管理器），另有桌面应用（Beta）。官方主页 opencode.ai，README 提供 21 种语言版本。
+OpenCode 是开源 AI 编程智能体，可在终端开展代码分析与开发，并提供 macOS、Windows、Linux 桌面应用（Beta）。内置 Build 开发模式和 Plan 分析模式；Plan 默认拒绝文件编辑，运行命令前请求许可，另有通用子智能体处理复杂任务。安装渠道包括 npm、Homebrew、Scoop 等；终端使用需合适的终端环境，并配置所选模型提供方及相应凭据。
+
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/anomalyco/opencode/blob/2fa3363c924c5c3e367b84a87ae478296a0ed59b/README.md)、[官方补充来源 1](https://github.com/anomalyco/opencode/blob/2fa3363c924c5c3e367b84a87ae478296a0ed59b/packages/web/src/content/docs/index.mdx)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
 
 ### 5. [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
@@ -210,7 +216,9 @@ DeepSeek 官方开源的智能体框架（命令名 `dsh`），架构核心是�
 
 > **身份快照（2026-09-24）**：仓库所属账号 [SillyTavern](https://github.com/SillyTavern)（组织账号）；GitHub 仓库 ID `599524116`；仓库创建于 2023-02-09；GitHub 许可标识：`AGPL-3.0`。
 
-面向高级用户的本地 LLM 前端，角色扮演与小说共创的主力工具。本地安装的交互界面，统一对接文本大模型、图像生成与语音合成；核心能力：角色卡系统（设定 AI 行为与人格、对话持久化）、World Info 世界观构建、多角色群聊、内置文档知识库（RAG）；扩展生态覆盖生图、TTS、翻译、自动摘要、联网搜索。支持 Windows/Mac/Linux/Android（Termux）/Docker。官方文档 docs.sillytavern.app。
+SillyTavern 是面向高级用户的本地 LLM 交互前端，提供角色卡、World Info、多角色群聊及聊天 RAG，可将文档加入聊天供模型参考。扩展支持生图、语音合成、翻译、自动摘要和联网搜索。安装需 Node.js 20 及以上；聊天还需连接本地或云端 LLM 推理后端，生图和语音能力依赖相应引擎或模型。官方提供 Windows、macOS/Linux、Android 及 Docker 安装指南。
+
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/SillyTavern/SillyTavern/blob/06bde939fb1e9c4c8d8641d810f0a916b5bce127/README.md)、[官方补充来源 1](https://github.com/SillyTavern/SillyTavern-Docs/blob/70e5e4d3c239253fca4692fe82e3936cb9c4b1b1/readme.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
 
 ### 15. [ai-shifu/ChatALL](https://github.com/ai-shifu/ChatALL)
 
@@ -316,17 +324,39 @@ DeepSeek Harness（dsh）插件精选列表。
 
 Markdown 形式的 agent skill，改写 AI 腔文本但不改变含义；逐项标出模式、检查事实细节，可按指定文风重写，并保持代码、数据、frontmatter 与链接目标不变。
 
+### 28. [TencentCloud/Octop](https://github.com/TencentCloud/Octop)
+
+⭐ 5,839 ｜ Python ｜ 星数快照：2026-09-30
+
+> **身份快照（2026-09-30）**：仓库所属账号 [TencentCloud](https://github.com/TencentCloud)（组织账号）；GitHub 仓库 ID `1293600453`；仓库创建于 2026-07-08；GitHub 许可标识：`MIT`。
+
+面向个人、家庭和小团队的自托管 AI 助手平台，支持多用户与专家角色，提供 Web 控制台、CLI、IM 通道、定时任务、文档 RAG、插件及 ACP 协作。默认控制面使用 SQLite，亦可选 PostgreSQL；按 Agent 配置 OpenAI 兼容 API、千问或 Ollama 等模型提供方，外部通道与连接器需各自授权。安装脚本建立隔离的 Python 3.12 环境，需预留内存和语料空间；AgentTeams 在 README 中标为 Beta，不能视作成熟功能保证。
+
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/TencentCloud/Octop/blob/e473dd3c4a4741618ffde1a42a3492341a189e8e/README_CN.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 29. [Tencent/WeKnora](https://github.com/Tencent/WeKnora)
+
+⭐ 31,271 ｜ Go ｜ 星数快照：2026-09-30
+
+> **身份快照（2026-09-30）**：仓库所属账号 [Tencent](https://github.com/Tencent)（组织账号）；GitHub 仓库 ID `1024118326`；仓库创建于 2025-07-22；GitHub 许可标识：未识别（NOASSERTION）。 [许可文件（固定版本）](https://github.com/Tencent/WeKnora/blob/9842e51d40a54ca2dbb61153f3fb587da1265b7a/LICENSE)写明主体采用 MIT，第三方组件另按各自许可；此说明与 API 标识分开记录。
+
+面向文档理解、语义检索与推理的知识管理框架，让 RAG 问答、任务 Agent 和 Wiki 共用知识库，支持多格式解析、原文引用、外部数据源同步、MCP 与技能沙箱。自行部署可用 Docker Compose 或 Kubernetes，并配置模型、存储与网络。首次知识库问答至少需要对话模型和 Embedding 向量模型；本地 Ollama 与远程模型需各自接通。沙箱与本机浏览器等能力按需求另配组件；官方建议生产环境部署在内网或私有网络。
+
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/Tencent/WeKnora/blob/9842e51d40a54ca2dbb61153f3fb587da1265b7a/README_CN.md)、[官方补充来源 1](https://github.com/Tencent/WeKnora/blob/9842e51d40a54ca2dbb61153f3fb587da1265b7a/website-docs/01-getting-started/03-quickstart.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
 ## 📖 阅读与影音 · 详解（17 个）
 
-### 28. [lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
+### 30. [lyswhut/lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
 
 ⭐ 53,823 ｜ TypeScript
 
 > **身份快照（2026-09-24）**：仓库所属账号 [lyswhut](https://github.com/lyswhut)（个人账号）；GitHub 仓库 ID `202367615`；仓库创建于 2019-08-14；GitHub 许可标识：`Apache-2.0`。
 
-洛雪音乐桌面版，开源免费的音乐播放软件（Windows/macOS/Linux），本清单里好几个音源仓库都是给它供源的。支持自定义音源、浏览器调起播放（Scheme URL）、自部署数据同步服务实现多端同步、开放 API 供第三方软件调用。官方文档 lyswhut.github.io/lx-music-doc；移动版是独立项目 lx-music-mobile。
+LX Music 桌面版是基于 Electron 与 Vue 的免费开源音乐软件，支持 Linux、macOS 和 Windows 7 及以上。在线播放依赖用户选择的自定义源返回音频链接，可能出现错配或无法播放；本体不提供音频获取能力。支持 Scheme URL 调起、另行部署的私人多端数据同步服务，以及启用后在本地运行的 HTTP 开放 API。官方说明后续开发重心主要转向 Any Listen，并建议现有用户尝试迁移。
 
-### 29. [gedoor/legado](https://github.com/gedoor/legado)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/lyswhut/lx-music-desktop/blob/ad95d5091c9ed689fa72b5e5c849df65f5a679ce/README.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 31. [gedoor/legado](https://github.com/gedoor/legado)
 
 ⭐ 47,083 ｜ Kotlin
 
@@ -334,7 +364,7 @@ Markdown 形式的 agent skill，改写 AI 腔文本但不改变含义；逐项�
 
 原清单记录其为“阅读 3.0”安卓阅读器。2026-09-24 查看官方 README 时，页面已改为侵权公告，并附阅文集团知识产权保护公告链接；现行 README 不再提供功能、安装和书源说明。这里保留项目原用途以便辨认，不据此判断软件当前可用性。
 
-### 30. [Predidit/Kazumi](https://github.com/Predidit/Kazumi)
+### 32. [Predidit/Kazumi](https://github.com/Predidit/Kazumi)
 
 ⭐ 30,148 ｜ Dart
 
@@ -342,7 +372,7 @@ Markdown 形式的 agent skill，改写 AI 腔文本但不改变含义；逐项�
 
 自定义规则的番剧采集与在线观看应用：用最多五行 XPath 规则就能构建一个采集源，支持规则导入分享。播放体验齐全——弹幕、倍速、硬件加速、Anime4K 实时超分、外部播放器、DLNA 投屏、「一起看」；带追番列表、跨设备同步、番剧下载。全平台覆盖：Android、Windows、macOS、Linux、iOS（侧载）、鸿蒙（侧载）。官方主页 kazumi.app。
 
-### 31. [koodo-reader/koodo-reader](https://github.com/koodo-reader/koodo-reader)
+### 33. [koodo-reader/koodo-reader](https://github.com/koodo-reader/koodo-reader)
 
 ⭐ 28,257 ｜ JavaScript
 
@@ -350,7 +380,7 @@ Markdown 形式的 agent skill，改写 AI 腔文本但不改变含义；逐项�
 
 全平台电子书管理与阅读器。格式覆盖广（EPUB、PDF、mobi、azw3、txt、漫画压缩包、docx 等）；云同步支持 WebDAV、OneDrive、Google Drive 等十余种通道；AI 能力可接自定义模型做翻译、词典、摘要；笔记可导出到 Notion/Obsidian/Readwise，生词自动同步 Anki 与欧路词典。隐私优先：无追踪、不上传阅读数据。支持 Windows/Mac/Linux/Android/iOS/Web。官方主页 koodoreader.com。
 
-### 32. [AZeC4/TelegramGroup](https://github.com/AZeC4/TelegramGroup)
+### 34. [AZeC4/TelegramGroup](https://github.com/AZeC4/TelegramGroup)
 
 ⭐ 23,280 ｜ 纯数据仓库
 
@@ -358,15 +388,15 @@ Markdown 形式的 agent skill，改写 AI 腔文本但不改变含义；逐项�
 
 Telegram 群组/频道/机器人导航合集，收录上万个群的清单与搜索机器人推荐，配套网站 dianbaodaohang.com。注意：仓库内容含较多推广返利链接（机场、AI 导航等营销板块），使用时自行甄别；作者也提醒电报账号建议用中文名防风控封号。
 
-### 33. [XIU2/Yuedu](https://github.com/XIU2/Yuedu)
+### 35. [XIU2/Yuedu](https://github.com/XIU2/Yuedu)
 
 ⭐ 12,320 ｜ 纯数据仓库
 
 > **身份快照（2026-09-24）**：仓库所属账号 [XIU2](https://github.com/XIU2)（个人账号）；GitHub 仓库 ID `212751942`；仓库创建于 2019-10-04；GitHub 许可标识：`GPL-3.0`。
 
-作者 XIU2 分享的「阅读」App（上一条的 gedoor/legado）自用书源：一部分网上搜集，一部分自己写的规则。README 把「阅读」的原理讲得清楚——它本质是个空壳阅读器，靠书源规则解析小说网站的搜索、目录、正文页。作者明示书源较少、维护不积极，推荐搭配其他综合书源库使用。配套分享站 yuedu.xiu2.xyz。
+作者 XIU2 分享的「阅读」App（gedoor/legado）自用书源：一部分网上搜集，一部分自己写的规则。README 把「阅读」的原理讲得清楚——它本质是个空壳阅读器，靠书源规则解析小说网站的搜索、目录、正文页。作者明示书源较少、维护不积极，推荐搭配其他综合书源库使用。配套分享站 yuedu.xiu2.xyz。
 
-### 34. [listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension)
+### 36. [listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension)
 
 ⭐ 12,100 ｜ JavaScript
 
@@ -376,7 +406,7 @@ Listen 1 浏览器扩展：一个扩展聚合网易云音乐、QQ 音乐、酷�
 
 ⚠️ **更新停滞（2026-09-03 记录）**：仓库最近一次代码提交在 2025-06，已一年余未更新；介意维护状态的可改用桌面版或洛雪音乐。
 
-### 35. [listen1/listen1_desktop](https://github.com/listen1/listen1_desktop)
+### 37. [listen1/listen1_desktop](https://github.com/listen1/listen1_desktop)
 
 ⭐ 11,405 ｜ JavaScript
 
@@ -384,7 +414,7 @@ Listen 1 浏览器扩展：一个扩展聚合网易云音乐、QQ 音乐、酷�
 
 Listen 1 的跨平台桌面版（Windows/Mac/Linux），聚合平台与扩展版一致（七家音乐平台），带收藏与自建歌单。与浏览器扩展共享核心代码，是两个入口选一个用即可的关系。
 
-### 36. [pdone/lx-music-source](https://github.com/pdone/lx-music-source)
+### 38. [pdone/lx-music-source](https://github.com/pdone/lx-music-source)
 
 ⭐ 9,036 ｜ JavaScript
 
@@ -392,7 +422,7 @@ Listen 1 的跨平台桌面版（Windows/Mac/Linux），聚合平台与扩展版
 
 洛雪音乐第三方音源导入链接集合：收录 SixYin、Huibq、Flower、LX、ikun、Grass、JuheApi、QDY 八个音源的最新版导入地址，每个都提供原始链接与加速链接（照顾访问 GitHub 受限的用户）。给洛雪音乐桌面版/移动版供源的「源头」仓库之一。
 
-### 37. [aoaostar/legado](https://github.com/aoaostar/legado)
+### 39. [aoaostar/legado](https://github.com/aoaostar/legado)
 
 ⭐ 6,440 ｜ HTML
 
@@ -400,7 +430,7 @@ Listen 1 的跨平台桌面版（Windows/Mac/Linux），聚合平台与扩展版
 
 「阅读」App 的书源与配套资源集合站（与阅读 App 本体同名但是**不同的仓库**，这是资源包不是软件）：全量书源自动同步（一次同步近 4000 条）、另收录多个知名书源包、订阅源、净化规则、主题与在线朗读引擎。Git 仓库本身不能一键导入，需到配套网站 legado.aoaostar.com 用协议链接一键导入。
 
-### 38. [Macrohard0001/lx-ikun-music-sources](https://github.com/Macrohard0001/lx-ikun-music-sources)
+### 40. [Macrohard0001/lx-ikun-music-sources](https://github.com/Macrohard0001/lx-ikun-music-sources)
 
 ⭐ 2,473 ｜ JavaScript
 
@@ -408,7 +438,7 @@ Listen 1 的跨平台桌面版（Windows/Mac/Linux），聚合平台与扩展版
 
 LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源服务的价格方案与购买入口、第三方在线解析服务列表、相关音乐软件项目导航。明示仅供个人学习交流，风险自担、严禁未授权商用。
 
-### 39. [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources)
+### 41. [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources)
 
 ⭐ 747 ｜ 纯数据仓库
 
@@ -416,7 +446,7 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 每日自动更新的中国 IPTV 电视直播源仓库：每天凌晨自动采集、验证有效性、生成标准 M3U8 播放列表，直接导入播放器就能用。频道分类齐全——央视（CCTV-1 到 CCTV-17 含 4K）、37 个省级卫视、付费频道，每类都有带分辨率与流畅度标注的版本。
 
-### 40. [lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile)
+### 42. [lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile)
 
 ⭐ 18,377 ｜ TypeScript
 
@@ -424,15 +454,17 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 洛雪音乐移动版是基于 React Native 的音乐软件，README 当前列出的支持平台为 Android 5 及以上，并把 GitHub Releases 标为原始发布地址，其他下载渠道属于第三方转载。文档链接到更新日志、常见问题及独立同步服务；同时提醒默认设置和界面操作不以新手友好为目标，建议用户先自行调整软件设置。
 
-### 41. [cwuom/NeriPlayer](https://github.com/cwuom/NeriPlayer)
+### 43. [cwuom/NeriPlayer](https://github.com/cwuom/NeriPlayer)
 
 ⭐ 3,498 ｜ Kotlin
 
 > **身份快照（2026-09-24）**：仓库所属账号 [cwuom](https://github.com/cwuom)（个人账号）；GitHub 仓库 ID `1034573460`；仓库创建于 2025-08-08；GitHub 许可标识：`GPL-3.0`。
 
-原生 Android 音乐播放器：多源在线播放、本地曲库管理、歌词体验与自建同步服务做进同一个原生应用。歌词支持卡拉OK式逐字渲染（GLSL 着色器），带 WebDAV/WebSocket 自建同步、一起听、USB 独占输出，隐私优先无广告。
+NeriPlayer 是支持 Android 9 及以上的原生音频播放器，整合多源在线播放、本地曲库管理、逐字歌词和 GLSL/AGSL 动态背景。在线内容受第三方平台授权与权限限制，部分平台需账号，项目不提供公共曲库。GitHub/WebDAV 同步保存歌单、历史和统计等元数据；“一起听”通过另行配置的 WebSocket 服务端同步播放，本地歌曲不能创建房间。USB 独占需兼容 USB DAC 和系统后台条件；元数据同步不是端到端加密。
 
-### 42. [Moriafly/SaltPlayerSource](https://github.com/Moriafly/SaltPlayerSource)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/cwuom/NeriPlayer/blob/34cf171951e63bde100afaff717f0da5c9339a8c/README.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 44. [Moriafly/SaltPlayerSource](https://github.com/Moriafly/SaltPlayerSource)
 
 ⭐ 7,377 ｜ 多平台
 
@@ -440,7 +472,7 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 椒盐音乐（Salt Player）的官方仓库——2020 年开发至今的多平台本地音乐播放器，用户超百万；本仓库承载问题反馈（issue）与官方安卓安装包发布，与洛雪同属本地曲库播放器阵营，以本地管理见长。
 
-### 43. [chthollyphile/folia-major](https://github.com/chthollyphile/folia-major)
+### 45. [chthollyphile/folia-major](https://github.com/chthollyphile/folia-major)
 
 ⭐ 2,893 ｜ TypeScript
 
@@ -448,7 +480,7 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 以全屏沉浸式歌词播放为核心的在线音乐播放器，支持网易云、酷狗、Navidrome 和本地音乐，智能匹配歌词/封面与 AI 配色，提供多种歌词动画及 Electron/Web 多平台版本。
 
-### 44. [ZWolken/Light-Novel-Yuedu-Source](https://github.com/ZWolken/Light-Novel-Yuedu-Source)
+### 46. [ZWolken/Light-Novel-Yuedu-Source](https://github.com/ZWolken/Light-Novel-Yuedu-Source)
 
 ⭐ 441 ｜ Python
 
@@ -456,9 +488,9 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 该仓库整理了供“阅读”App 导入的轻小说书源 JSON，分为日轻、国轻、日语原版及合并合集，并提供下载、网络导入和订阅说明。README 明确标注项目处于半维护周期，不保证书源有效；部分来源需登录或可能搜索异常，维护者也无法保证 issue 及时处理，因此旧书源可能无法正常使用。
 
-## 🎮 游戏与串流 · 详解（8 个）
+## 🎮 游戏与串流 · 详解（9 个）
 
-### 45. [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)
+### 47. [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)
 
 ⭐ 150,160 ｜ C
 
@@ -466,23 +498,27 @@ LX Music 与 IKUN Music 音源收集导航：音源导入链接、付费音源�
 
 安卓投屏控制的事实标准：通过 USB 或无线把手机屏幕镜像到电脑，用电脑键鼠直接控制手机。无需 root、无需在手机上装任何 App，延迟 35~70ms，支持 30~120fps。功能：音频转发、录制、息屏镜像、双向剪贴板、相机镜像、手柄支持、OTG 模式等。支持 Linux/Windows/macOS，手机需 Android 5.0+ 并开启 USB 调试。
 
-### 46. [AlkaidLab/foundation-sunshine](https://github.com/AlkaidLab/foundation-sunshine)
+### 48. [AlkaidLab/foundation-sunshine](https://github.com/AlkaidLab/foundation-sunshine)
 
 ⭐ 6,938 ｜ C++
 
 > **身份快照（2026-09-24）**：仓库所属账号 [AlkaidLab](https://github.com/AlkaidLab)（组织账号）；GitHub 仓库 ID `597942169`；仓库创建于 2023-02-06；GitHub 许可标识：`GPL-3.0`。
 
-Sunshine 增强版——自托管游戏串流的主机端（把你的电脑变成串流服务器，配合 Moonlight 客户端在别的设备上玩）。相对上游 LizardByte/Sunshine 的增强：HDR 全链路（HDR10+/HDR Vivid 动态元数据）、虚拟显示器驱动、7.1.4 环绕声、NVENC/AMF 编码优化、Tauri 2 现代控制面板（扫码配对、实时监控）、文件夹共享。专精 Windows 游戏串流体验。官方主页 alkaidlab.com。
+基于 Sunshine 的增强分支，面向 Windows 游戏串流主机，配合 Moonlight 客户端使用。提供 HDR10+/HDR Vivid 动态元数据、7.1.4 声道映射、虚拟显示器、NVENC/AMF 编码优化、扫码配对和文件夹共享。实际编码、HDR 与画质增强取决于显卡、驱动和客户端；虚拟显示器等功能另有组件要求，主机侧 Dolby Vision 注入状态不保证终端呈现效果。
 
-### 47. [qiin2333/moonlight-vplus](https://github.com/qiin2333/moonlight-vplus)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/AlkaidLab/foundation-sunshine/blob/eb8809bac4f5cf9e4046762cfec87caff45d4e2e/README.md)、[官方补充来源 1](https://github.com/AlkaidLab/foundation-sunshine/blob/eb8809bac4f5cf9e4046762cfec87caff45d4e2e/docs/getting_started.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 49. [qiin2333/moonlight-vplus](https://github.com/qiin2333/moonlight-vplus)
 
 ⭐ 3,769 ｜ Kotlin
 
 > **身份快照（2026-09-24）**：仓库所属账号 [qiin2333](https://github.com/qiin2333)（个人账号）；GitHub 仓库 ID `632255125`；仓库创建于 2023-04-25；GitHub 许可标识：`GPL-3.0`。
 
-Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协议完全兼容。相对官方版的增强：解锁 144/165Hz 高刷、最高 800Mbps 码率、HDR 校准文件自动加载；按键深度自定义（轮盘、连发、手柄瞄准、陀螺仪体感）、触控笔与多点触控；悬浮球、扫码配对、性能覆盖层（帧率/延迟/丢包实时显示）、7.1.4 空间音频。部分功能需搭配 Foundation Sunshine 主机端使用。Android 5.0+。
+Moonlight 安卓串流客户端增强版，支持自定义按键、触控与体感、HDR 校准、性能覆盖层和高刷设置。基础要求为 Android 5.0+；144/165 Hz、800 Mbps 属配置上限，实际需主机、客户端和网络支持。7.1.4 音频需 Android 12+ 及兼容输出设备；麦克风、实时码率和显示控制等扩展需 Foundation Sunshine 配合，具体可用性取决于版本与权限。
 
-### 48. [DSPBluePrints/FactoryBluePrints](https://github.com/DSPBluePrints/FactoryBluePrints)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/qiin2333/moonlight-vplus/blob/052a79adfe8b6e60d7e6baf9a678351c1c28619a/README.md)、[官方补充来源 1](https://github.com/qiin2333/moonlight-vplus/blob/052a79adfe8b6e60d7e6baf9a678351c1c28619a/docs/COMPATIBILITY.md)、[官方补充来源 2](https://github.com/qiin2333/moonlight-vplus/blob/052a79adfe8b6e60d7e6baf9a678351c1c28619a/app/src/main/res/values/strings.xml)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 50. [DSPBluePrints/FactoryBluePrints](https://github.com/DSPBluePrints/FactoryBluePrints)
 
 ⭐ 2,440 ｜ 纯数据仓库
 
@@ -490,7 +526,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 游戏《戴森球计划》的社区工厂蓝图仓库：从小马蓝图群与 CIDT 设科院贡献的蓝图合集。从 Releases 下载蓝图包放进游戏蓝图目录即可用；仓库集成自动更新脚本，更新只需双击 update.bat。蓝图默认 CC BY-NC-SA 4.0 协议。
 
-### 49. [mcthesw/game-save-manager](https://github.com/mcthesw/game-save-manager)
+### 51. [mcthesw/game-save-manager](https://github.com/mcthesw/game-save-manager)
 
 ⭐ 1,142 ｜ Rust
 
@@ -498,7 +534,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 图形化的开源游戏存档管理器：备份、恢复、管理各游戏的存档，支持存档描述与备注、云备份（WebDAV）、定时备份、恢复前自动删除旧档、托盘快捷操作。Rust + Tauri 技术栈，后台占用极小。官网 help.sworld.club。
 
-### 50. [alkaidjin/Maa-Assistant-Browndust2](https://github.com/alkaidjin/Maa-Assistant-Browndust2)
+### 52. [alkaidjin/Maa-Assistant-Browndust2](https://github.com/alkaidjin/Maa-Assistant-Browndust2)
 
 ⭐ 67 ｜ JavaScript
 
@@ -506,7 +542,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 手游《BrownDust2》（棕色尘埃 2）的日常自动化小助手，基于 MAA（明日方舟assistant 的通用自动化框架）开发：自动清日常、收资源，游戏内文字识别用 PaddleOCR 移动端模型。个人维护的小型工具，从 Releases 下载即用。
 
-### 51. [GodRaymond233/ok-bd2](https://github.com/GodRaymond233/ok-bd2)
+### 53. [GodRaymond233/ok-bd2](https://github.com/GodRaymond233/ok-bd2)
 
 ⭐ 103 ｜ Python
 
@@ -514,7 +550,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 基于 ok-script 的《BrownDust II》（棕色尘埃 2）自动化助手，和 Maa-Assistant-Browndust2 同属游戏日常自动化工具。
 
-### 52. [MadestSamurai/bd2-infinite-gacha](https://github.com/MadestSamurai/bd2-infinite-gacha)
+### 54. [MadestSamurai/bd2-infinite-gacha](https://github.com/MadestSamurai/bd2-infinite-gacha)
 
 ⭐ 10 ｜ C#
 
@@ -522,9 +558,19 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 适用于 BrownDust II Windows 客户端的独立无限抽抽乐助手，读取卡池与账号进度，按 A/B 目标和停止条件刷新、跳过动画，命中后保留结果供确认。
 
+### 55. [HIllya51/LunaTranslator](https://github.com/HIllya51/LunaTranslator)
+
+⭐ 13,471 ｜ C++ ｜ 星数快照：2026-09-30
+
+> **身份快照（2026-09-30）**：仓库所属账号 [HIllya51](https://github.com/HIllya51)（个人账号）；GitHub 仓库 ID `542386106`；仓库创建于 2022-09-28；GitHub 许可标识：`GPL-3.0`。
+
+视觉小说翻译工具，通过 HOOK 提取游戏文本，也提供部分游戏的内嵌翻译、模拟器 HOOK、在线与离线 OCR，支持大语言模型及离线翻译引擎。附带日语分词与假名注音、AnkiConnect、Yomitan 和语音合成等接口。内嵌翻译只适配部分游戏；所需账号、API 或离线资源依选择的引擎而定，学习辅助需相应插件配合。语音识别使用 Windows 10/11 的系统能力，游戏、引擎和插件兼容性需分别确认。
+
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/HIllya51/LunaTranslator/blob/363de6354ef9d085403f78f325cff5d69b97eda8/.github/README.md)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
 ## 🛠️ 自托管与效率工具 · 详解（13 个）
 
-### 53. [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
+### 56. [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)
 
 ⭐ 146,258 ｜ TypeScript
 
@@ -532,7 +578,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 基于 Tauri 的 Clash Meta（mihomo）图形代理客户端，Windows/macOS/Linux 全平台，是原 Clash Verge 的社区延续版。分正式版（Stable，日常使用）与滚动构建版（AutoBuild，尝鲜用）。README 自带推广板块为第三方机场广告，与项目无关，安装请只走 GitHub Releases。官方主页 clashverge.dev。
 
-### 54. [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan)
+### 57. [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan)
 
 ⭐ 46,455 ｜ TypeScript
 
@@ -540,7 +586,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 思源笔记：隐私优先、块级引用的开源笔记系统，可自托管成个人知识库。核心特色：内容块级引用与双向链接、Markdown 所见即所得、SQL 查询嵌入、数学公式/流程图/甘特图/五线谱、网页剪藏、PDF 批注；支持百万字大文档。大多数功能免费（含商用）。部署方式齐全：安装包、Docker、NAS 应用市场均可。官方主页 b3log.org/siyuan。
 
-### 55. [waydabber/BetterDisplay](https://github.com/waydabber/BetterDisplay)
+### 58. [waydabber/BetterDisplay](https://github.com/waydabber/BetterDisplay)
 
 ⭐ 33,746 ｜ —
 
@@ -548,7 +594,7 @@ Moonlight 安卓客户端功能增强版（Moonlight V+），与原版串流协�
 
 Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完全可缩放屏幕、DDC 亮度色彩控制（兼容显示器可超 100% 亮度提亮、也能完全调暗至黑）、创建虚拟屏幕、显示器画中画、热断开重连、多屏亮度归一同步、HDR 与高刷虚拟屏。版本线覆盖 macOS Mojave 至最新系统。官方主页 betterdisplay.pro。
 
-### 56. [jiangrui1994/CloudSaver](https://github.com/jiangrui1994/CloudSaver)
+### 59. [jiangrui1994/CloudSaver](https://github.com/jiangrui1994/CloudSaver)
 
 ⭐ 9,317 ｜ Vue
 
@@ -556,7 +602,7 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 网盘资源搜索与一键转存的自部署工具（Vue 3 + Express，Docker 一键部署）：多资源订阅源关键词搜索、豆瓣热门榜单、搜索结果一键转存至 115/夸克/天翼/123 云盘，带多用户权限系统。⚠️ 项目涉及网盘 Cookie 等敏感凭据，官方强烈要求**私有化部署**、不要用任何第三方在线站点；开源仓库停留在 V0.2.5，新版本仅通过 Docker 镜像提供。
 
-### 57. [Nevcairiel/LAVFilters](https://github.com/Nevcairiel/LAVFilters)
+### 60. [Nevcairiel/LAVFilters](https://github.com/Nevcairiel/LAVFilters)
 
 ⭐ 9,154 ｜ C++
 
@@ -564,7 +610,7 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 基于 ffmpeg 的 Windows DirectShow 解码滤镜套装：装上之后各类 DirectShow 播放器几乎能播所有格式（MKV、AVI、MP4/MOV、TS/M2TS、FLV、蓝光原盘等）。自动流选择策略智能（视频选最高画质、音频按首选语言与声道数排序、字幕四种模式）。是 Windows 影音播放器生态的底层积木。
 
-### 58. [floccusaddon/floccus](https://github.com/floccusaddon/floccus)
+### 61. [floccusaddon/floccus](https://github.com/floccusaddon/floccus)
 
 ⭐ 8,477 ｜ JavaScript
 
@@ -572,15 +618,17 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 跨浏览器跨设备的私密书签同步工具：同步的是浏览器**原生书签**（不导入第三方体系），数据走你自己的服务器——支持 Nextcloud、Linkwarden、Google Drive、Dropbox、任意 Git 服务器或 WebDAV。覆盖所有支持扩展的浏览器（Firefox/Chrome/Edge/Brave/Vivaldi 等），移动端有独立 App 补足。可建多个同步配置档，方向（单向/双向）、间隔、文件夹均可控。官方主页 floccus.org。
 
-### 59. [Ponphil/LitePan](https://github.com/Ponphil/LitePan)
+### 62. [Ponphil/LitePan](https://github.com/Ponphil/LitePan)
 
 ⭐ 1,260 ｜ Go
 
 > **身份快照（2026-09-24）**：仓库所属账号 [Ponphil](https://github.com/Ponphil)（个人账号）；GitHub 仓库 ID `1246231570`；仓库创建于 2026-05-22；GitHub 许可标识未识别。
 
-多网盘聚合挂载与媒体库整理工具（Go 版重写中，开发阶段）：多网盘多账号统一管理、跨盘秒传、生成 .strm 直连对接 Emby/Jellyfin 并自动刮削（nfo/海报）、TMDB 识别目录整理——整理、STRM、刮削、刷库可串联自动联动。支持 WebDAV 与 FUSE 本地挂载、302 直链、离线下载。Docker Compose 部署（端口 5211）。⚠️ 官方警告：Docker 勿用 latest 镜像（那是旧 Python 版），应使用 Beta 标签。官方主页 litepan.top。
+开发中的 Go 版多网盘聚合工具，支持多账号管理、跨盘传输、STRM 直连、TMDB 整理、刮削及任务联动，可配合 Emby/Jellyfin。另有 WebDAV、FUSE 挂载、302 直链与离线下载。Compose 使用 ponphil/litepan:beta；latest 仍是旧 Python 版。FUSE 需宿主 /dev/fuse 权限。README 声明采用 PolyForm Noncommercial 1.0.0，限非商用；开发版需谨慎测试。
 
-### 60. [MAXeaglet/commandcode-proxy](https://github.com/MAXeaglet/commandcode-proxy)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/Ponphil/LitePan/blob/42a3ee9a848c8269b13bc0b41ec2468e37238a2d/README.md)、[官方补充来源 1](https://github.com/Ponphil/LitePan/blob/42a3ee9a848c8269b13bc0b41ec2468e37238a2d/docker-compose.yml)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 63. [MAXeaglet/commandcode-proxy](https://github.com/MAXeaglet/commandcode-proxy)
 
 ⭐ 668 ｜ JavaScript
 
@@ -588,7 +636,7 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 单文件、零外部依赖的 Command Code 反向代理，将 API 转换为 OpenAI/Anthropic 兼容端点，支持 Responses/Chat、流式、工具调用、多模态、重试与隐私日志。
 
-### 61. [Patrick-mufeng/cmdgo-bridge](https://github.com/Patrick-mufeng/cmdgo-bridge)
+### 64. [Patrick-mufeng/cmdgo-bridge](https://github.com/Patrick-mufeng/cmdgo-bridge)
 
 ⭐ 14 ｜ TypeScript
 
@@ -596,15 +644,17 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 把 Command Code Go 套餐接入任意 Agent 工具的本地 OpenAI 兼容桥，含 OAuth 登录、请求级多账号池、官方模型目录同步与 Web 控制台，Node ≥20。
 
-### 62. [linguo2625469/workbuddy2api-panel](https://github.com/linguo2625469/workbuddy2api-panel)
+### 65. [linguo2625469/workbuddy2api-panel](https://github.com/linguo2625469/workbuddy2api-panel)
 
 ⭐ 660 ｜ Go
 
 > **身份快照（2026-09-24）**：仓库所属账号 [linguo2625469](https://github.com/linguo2625469)（个人账号）；GitHub 仓库 ID `1366969284`；仓库创建于 2026-09-12；GitHub 许可标识：`MIT`。
 
-基于 Sliverkiss/workbuddy2api 的增强分支，把腾讯 CodeBuddy 账号包装为 OpenAI 兼容多账号网关，增加 Web 面板、OAuth、账号池治理、定时任务与成长任务。
+以本人授权的 CodeBuddy 账号提供非官方 OpenAI Chat Completions 兼容网关，支持 OAuth、账号池、冷却熔断、流式响应、Web 面板、部分配置热更新与任务管理。适合本人账号的本机或私有环境；依赖非公开上游接口，不代表兼容全部 OpenAI 协议。README 自述此分支已独立维护；上游地址本次返回 404，原因未确认。服务无内置 TLS，实际账号与模型兼容性仍需验证。
 
-### 63. [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api)
+> **功能核验（2026-09-30）**：[官方 README（固定版本）](https://github.com/linguo2625469/workbuddy2api-panel/blob/35c5ae9c1236154d5ddcc449832c90e97b7fa2ff/README.md)、[官方补充来源 1](https://github.com/linguo2625469/workbuddy2api-panel/blob/35c5ae9c1236154d5ddcc449832c90e97b7fa2ff/internal/server/handler.go)；依据项目文档或源码说明，未实测。来源 README 未单独标注全局文档日期，版本以链接中的提交 SHA 为准。
+
+### 66. [Sliverkiss/workbuddy2api](https://github.com/Sliverkiss/workbuddy2api)
 
 ⭐ 1,428 ｜ Go
 
@@ -612,7 +662,9 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 非官方的 CodeBuddy OpenAI 兼容上游网关，通过 OAuth 获取凭证，支持 token 刷新、账号池调度、冷却/熔断、会话粘性和流式响应。
 
-### 64. [MetaCubeX/ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)
+> **链接复查（2026-09-30）**：原仓库 GitHub API 仍返回 404，原因未确认；当前公开 Stars 列表未出现本项目，保留历史说明与 2026-09-22 星数，不据此确认软件当前可用性。
+
+### 67. [MetaCubeX/ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)
 
 ⭐ 46,527 ｜ Kotlin
 
@@ -620,7 +672,7 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 这是 Clash.Meta 的 Android 图形界面客户端，README 标注 Android 5.0+（推荐 7.0+）及四种架构：armeabi-v7a、arm64-v8a、x86、x86_64。文档列出内核、SDK、CMake 等构建依赖，并说明服务启停和 clash://、clashmeta:// 配置导入；自行构建需配置 SDK 与签名。
 
-### 65. [Javis603/token-monitor](https://github.com/Javis603/token-monitor)
+### 68. [Javis603/token-monitor](https://github.com/Javis603/token-monitor)
 
 ⭐ 2,275 ｜ JavaScript
 
@@ -630,8 +682,9 @@ Mac 显示器深度管理工具（BetterDisplay Pro）：把显示器变成完�
 
 ## 维护约定
 
-- **一览表**（本文件开头）：项目名称即链接、星数、一句话简介；整库刷新时星数同步更新
-- **详解条目**（本文件下方）：新收藏项目入列时在对应分类末尾追加；功能描述以官方 README 为准，一次写清、长期不随星数变动；星数随整库刷新同步
+- **一览表**：项目名称即仓库链接、星数、一句话定位；与详解对应，同步关键维护状态或使用限制，历史提醒保留日期。刷新星数时两处同时更新，并明确该批快照范围。
+- **详解条目**：新增项目在对应分类末尾追加；功能核验时更新用途、功能、必要配套与限制，并记录核验日期和固定官方来源。星数、身份、功能分开记录，局部功能更新不冒充整库事实刷新。
 - **身份快照**：新增或整库核验时记录查询日期、当时的仓库所属账号、GitHub 仓库 ID、创建日期与许可标识；“所属账号”不冒充最初创建者。链接失效时保留原说明，注明最后核验结果及无法确认的原因；README 是文字记录，不等于源码备份
-- **单文件就地换版**：本 README 即清单本体，整库刷新就地进行（星数查询值换日期），后续变更在新的提交记录中追踪；每个条目含项目名、仓库链接、一句话定位；分类互斥不重复
+- **单 README 就地维护**：本 README 是唯一清单本体；四分类互斥，检查脚本不另存项目数据。更新在一个聚焦提交中追踪，原版本可从提交历史恢复。
+- **一致性检查**：Python 3 标准库脚本 [scripts/check_readme.py](scripts/check_readme.py) 离线核对分类数量、唯一仓库链接、表与详解对应及顺序、连续编号和两处星数。运行 `python -X utf8 scripts/check_readme.py`；运行 `python -X utf8 scripts/check_readme.py --self-test` 验证缺项、错误星数、重复链接、跳号等内存故障样例。脚本不联网、不修改手册；来源真实性、历史日期和使用限制另需人工核验。
 
