@@ -3,7 +3,7 @@
 import argparse
 import re
 from pathlib import Path
-CATEGORIES = ("AI", "阅读与影音", "游戏与串流", "自托管与效率工具")
+CATEGORIES = ("AI", "阅读与影音", "游戏与串流", "自托管与效率工具", "历史保留")
 HEADING = re.compile(r"^## (.+?)（(\d+)\s*个）$")
 ROW = re.compile(r"^\|\s*\[([^\]]+)\]\(([^)]+)\)\s*\|\s*([^|]*)\s*\|\s*(.*?)\s*\|$")
 DETAIL = re.compile(r"^### (\d+)\. \[([^\]]+)\]\(([^)]+)\)$")
@@ -193,7 +193,7 @@ def main():
         print("ERROR " + message)
     if errors:
         return 1
-    print(f"PASS {args.path}: 表 {len(rows)} 项 / 详解 {len(details)} 项，四分类、链接、顺序、编号及星数一致")
+    print(f"PASS {args.path}: 表 {len(rows)} 项 / 详解 {len(details)} 项，四个当前分类与历史保留、链接、顺序、编号及星数一致")
     return 0 if not args.self_test or self_test(text, rows, details) else 1
 
 if __name__ == "__main__":
